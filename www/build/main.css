@@ -24731,3 +24731,19 @@ ion-navbar.toolbar {
     padding-top: calc(16px + 20px);
   }
 }
+
+/*********tweeks********/
+#dashboard-top {text-align:right}
+#dashboard-top ion-icon {font-size: 30px}
+
+
+#dashboard-middle {text-align:center}
+#dashboard-middle h1 {
+  
+    position: absolute;
+    top: 32%;
+    left: 42%;
+    z-index: 1;
+    font-size: 44px;
+    color: #fff;
+}

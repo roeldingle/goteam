@@ -9,9 +9,21 @@
 
 
 <ion-content padding>
-
-  <h3>Team Dashboard</h3>
+  <div id="dashboard-top">
+    <ion-icon name="pie"></ion-icon>
+    <ion-icon name="stats"></ion-icon>
+  </div>
   
-  <chart [options]="chartOptions" style="display:block" type="chart"></chart>
+  <div id="dashboard-middle" >
+    <h1>85%</h1>
+    <chart [options]="chartOptions" style="display:block;width:80%;margin:0 auto" type="chart"></chart>
+    <ion-item>
+      <ion-label>Date</ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+    </ion-item>
+  </div>
+
+
+  
 
 </ion-content>
